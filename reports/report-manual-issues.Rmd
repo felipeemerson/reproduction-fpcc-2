@@ -1,0 +1,65 @@
+---
+title: "Relatórios sobre as issues (manual)"
+author: "Felipe Emerson de O. Calixto"
+date: "2023-07-15"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(dplyr)
+library(jsonlite)
+library(ggplot2)
+theme_set(theme_bw())
+
+issues <- fromJSON("../data/processed_data/manual_processed_issues.json")
+```
+
+# Overview dos dados de entrada
+```{r}
+glimpse(issues)
+```
+
+# Sumário
+```{r}
+
+```
+
+## Tamanho da amostra por repositório (cada unidade da amostra é um PR)
+```{r}
+issues %>%
+  group_by(repo) %>%
+  summarise(count = n())
+```
+
+## Qnt. de issues por PR por repositório
+```{r}
+issues %>%
+    group_by(repo) %>%
+    ggplot(aes(y=total, x=repo)) +
+    geom_point(aes(color = repo)) +
+    labs(title ="Qnt. de issues por PR de cada repositorio",
+         color = "Repositorio"
+    ) +
+    xlab("Qnt. de issues por PR") +
+    ylab("Repositorio")
+```
+
+# Análise das issues não resolvidas 
+
+## Taxa de Remoção de Violações (TRV)
+Obs: considerando que nesse caso todos os valores são referentes após a execução do SonarQube em todos os commits. Assim, temos o total de violações, independentes se sejam novas ou não. O que difere um pouco da métrica original, embora ainda seja interessante para se checar.
+```{r}
+issues %>%
+  group_by(repo) %>%
+  summarize(
+      soma_total = sum(total),
+      soma_not_resolved = sum(not_resolved)
+  ) %>%
+  mutate(trv = (soma_total - soma_not_resolved) / soma_not_resolved * 100)
+```
+
+Os projetos accumulo e o commons-io, apresentaram TRV de 0,15% e 0,05%, respectivamente. Isto é, há uma redução bem pequena no débito técnico. A amostra do maven-surefire não apresentou nenhuma issue resolvida, provavelmente por conta da amostra ser muito pequena (7).

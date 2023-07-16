@@ -1,0 +1,467 @@
+[
+    {
+        "pr_number": 564,
+        "created_at": "2022-09-19 12:29:28+00:00",
+        "commits": [
+            {
+                "sha": "0498b2ef68b5b6854d4741254a06dcc3083db104",
+                "created_at": "2022-09-19 14:28:49+02:00"
+            },
+            {
+                "sha": "2523eef51e8fab034e8ec151e28d8b92ab882294",
+                "created_at": "2022-09-19 15:10:55+02:00"
+            }
+        ],
+        "pr_commit": "0498b2ef68b5b6854d4741254a06dcc3083db104",
+        "start_commit": "a0944d06431f230e6b50d96c7a2ddc6abbb72631",
+        "is_pr_commit_first": true
+    },
+    {
+        "pr_number": 527,
+        "created_at": "2022-04-24 14:08:46+00:00",
+        "commits": [
+            {
+                "sha": "ce3d3ffbf09b9a19b6fbd4ffc37dd3452cc048e3",
+                "created_at": "2022-04-24 16:05:14+02:00"
+            },
+            {
+                "sha": "a8a020cf85e1c4eaca71aa88d8c056d5b416ecef",
+                "created_at": "2022-04-24 22:05:06+02:00"
+            }
+        ],
+        "pr_commit": "ce3d3ffbf09b9a19b6fbd4ffc37dd3452cc048e3",
+        "start_commit": "0e08169214b78fc107c547728c5dd684b5d32d55",
+        "is_pr_commit_first": true
+    },
+    {
+        "pr_number": 508,
+        "created_at": "2022-04-04 23:09:54+00:00",
+        "commits": [
+            {
+                "sha": "b0fac300837374f538d64ad216c4d50cb5316787",
+                "created_at": "2022-04-05 09:09:24+10:00"
+            },
+            {
+                "sha": "ca7b84f8163d1a0edd3fb60b855031bcb101022f",
+                "created_at": "2022-04-05 09:18:55+10:00"
+            }
+        ],
+        "pr_commit": "b0fac300837374f538d64ad216c4d50cb5316787",
+        "start_commit": "6e60b0389814d8361e453092d3b18f52c3e4bcb1",
+        "is_pr_commit_first": true
+    },
+    {
+        "pr_number": 481,
+        "created_at": "2022-02-28 01:47:46+00:00",
+        "commits": [
+            {
+                "sha": "183f844e40d136dd8a153acb6d617a29ed854052",
+                "created_at": "2022-02-28 11:47:20+10:00"
+            },
+            {
+                "sha": "3e5db1ed0d9941132ed63792fe2b3baa30eeb042",
+                "created_at": "2022-02-28 11:48:24+10:00"
+            }
+        ],
+        "pr_commit": "183f844e40d136dd8a153acb6d617a29ed854052",
+        "start_commit": "3050d2e32b957bbc98112979c27e977a39933fa6",
+        "is_pr_commit_first": true
+    },
+    {
+        "pr_number": 480,
+        "created_at": "2022-02-28 01:05:13+00:00",
+        "commits": [
+            {
+                "sha": "d8c00afccf82d0b2db75361d77b9c94cece8b2db",
+                "created_at": "2022-02-28 11:04:24+10:00"
+            },
+            {
+                "sha": "11c67a554d2bfbce28f9625e420d35410353f48a",
+                "created_at": "2022-02-28 11:40:24+10:00"
+            },
+            {
+                "sha": "51a27f8c9f775a5dc686a221f72ed95a3726d718",
+                "created_at": "2022-03-02 07:08:37+10:00"
+            },
+            {
+                "sha": "d628180476efad519c14e05fdf87e75618d20bbf",
+                "created_at": "2022-03-02 16:48:35+10:00"
+            }
+        ],
+        "pr_commit": "d8c00afccf82d0b2db75361d77b9c94cece8b2db",
+        "start_commit": "c14aacb70488e44e662d4eabb25d18751bb2bd03",
+        "is_pr_commit_first": true
+    },
+    {
+        "pr_number": 401,
+        "created_at": "2021-12-04 05:15:36+00:00",
+        "commits": [
+            {
+                "sha": "ccdad96eb9981991276cede94bb09d2b1f07f623",
+                "created_at": "2021-12-04 15:07:01+10:00"
+            },
+            {
+                "sha": "7279d4bbcc49a2a31d034633c93dc4b749389c77",
+                "created_at": "2021-12-04 15:10:08+10:00"
+            },
+            {
+                "sha": "53448a6617dc427d1add137d9c1917ccb37524e4",
+                "created_at": "2021-12-04 15:11:17+10:00"
+            },
+            {
+                "sha": "a25ba1b294f1ce8dad29d275dc6fc5c75b41f7d2",
+                "created_at": "2021-12-04 15:26:25+10:00"
+            }
+        ],
+        "pr_commit": "53448a6617dc427d1add137d9c1917ccb37524e4",
+        "start_commit": "7279d4bbcc49a2a31d034633c93dc4b749389c77",
+        "is_pr_commit_first": false
+    },
+    {
+        "pr_number": 332,
+        "created_at": "2021-01-26 10:11:14+00:00",
+        "commits": [
+            {
+                "sha": "47878b9f43ccab00f4d24a89a44d16b31b24fc91",
+                "created_at": "2021-01-26 17:10:13+07:00"
+            },
+            {
+                "sha": "c749b63509fce01ec3bec01e381c1ac22ed6df85",
+                "created_at": "2021-01-27 08:42:50+07:00"
+            }
+        ],
+        "pr_commit": "47878b9f43ccab00f4d24a89a44d16b31b24fc91",
+        "start_commit": "f14fa54b9eba073c8c896a829fac1c2037b34222",
+        "is_pr_commit_first": true
+    },
+    {
+        "pr_number": 287,
+        "created_at": "2020-04-26 13:56:33+00:00",
+        "commits": [
+            {
+                "sha": "7ad0d2e23bb4d8a75a21e33099f611486d167863",
+                "created_at": "2020-04-26 09:55:47-04:00"
+            },
+            {
+                "sha": "0a204362202ac787fbbebc2ca6247ac0dc4a3edc",
+                "created_at": "2020-04-26 10:24:40-04:00"
+            }
+        ],
+        "pr_commit": "7ad0d2e23bb4d8a75a21e33099f611486d167863",
+        "start_commit": "f64ca98a09e378318118bbd984d3ebacf8749318",
+        "is_pr_commit_first": true
+    },
+    {
+        "pr_number": 267,
+        "created_at": "2020-01-24 10:39:08+00:00",
+        "commits": [
+            {
+                "sha": "136f79ee4ca739129f408a581398018bbf774247",
+                "created_at": "2020-01-24 00:47:18-08:00"
+            },
+            {
+                "sha": "38ad13f5a6a628282064d1b0976e1ea69a135b0e",
+                "created_at": "2020-01-24 00:53:27-08:00"
+            },
+            {
+                "sha": "6df45c50e06b396504b0a846a59a60052f0177ff",
+                "created_at": "2020-01-25 02:57:08-08:00"
+            },
+            {
+                "sha": "3a9b530e872f729cf9c97f60308dad380f522ff4",
+                "created_at": "2020-01-29 21:53:31-08:00"
+            },
+            {
+                "sha": "fe6cf7d9039f22da57ab6555d5a299aa5f9fe74b",
+                "created_at": "2020-01-30 00:18:12-08:00"
+            },
+            {
+                "sha": "5d4f74eb5def3a7fb41b11c20e1754368c8e18e5",
+                "created_at": "2020-01-30 23:32:54-08:00"
+            }
+        ],
+        "pr_commit": "38ad13f5a6a628282064d1b0976e1ea69a135b0e",
+        "start_commit": "136f79ee4ca739129f408a581398018bbf774247",
+        "is_pr_commit_first": false
+    },
+    {
+        "pr_number": 162,
+        "created_at": "2017-08-19 09:45:55+00:00",
+        "commits": [
+            {
+                "sha": "1a7dd9b84f8462fa841e015826b44c553ff64b5e",
+                "created_at": "2017-08-19 11:42:54+02:00"
+            },
+            {
+                "sha": "59d32392920d9f7753073184aaed772e5e089a84",
+                "created_at": "2017-08-19 11:48:38+02:00"
+            },
+            {
+                "sha": "05b42861b856a123fde83a31ab47f0c8d70b9fc7",
+                "created_at": "2017-08-19 11:53:50+02:00"
+            }
+        ],
+        "pr_commit": "1a7dd9b84f8462fa841e015826b44c553ff64b5e",
+        "start_commit": "9580f5ef25c0d4736046165275f2d57d31686ae9",
+        "is_pr_commit_first": true
+    },
+    {
+        "pr_number": 142,
+        "created_at": "2017-02-06 19:05:10+00:00",
+        "commits": [
+            {
+                "sha": "73e09a8b2b245e76e072c1809e7fa50be02e95b6",
+                "created_at": "2017-02-06 14:02:48+01:00"
+            },
+            {
+                "sha": "0c329812e71f149bb7c92bfaa3fa37c6d2ec6eec",
+                "created_at": "2017-02-06 14:20:54+01:00"
+            },
+            {
+                "sha": "a0d0325db046f266abc401abe3e0047f6ce908c3",
+                "created_at": "2017-02-06 14:23:03+01:00"
+            },
+            {
+                "sha": "62d00dca5709c0a089a65f810c1c66c2897b5003",
+                "created_at": "2017-02-06 14:25:01+01:00"
+            },
+            {
+                "sha": "9283dee30decf62e12edd5eaea08abd811ee811f",
+                "created_at": "2017-02-06 15:20:30+01:00"
+            },
+            {
+                "sha": "caceca16772c6d11302c2d8627c7f5b7d913878a",
+                "created_at": "2017-02-06 18:55:49+01:00"
+            },
+            {
+                "sha": "43fb41e8d4115830fbeb6d29f1f17efe8e04de5f",
+                "created_at": "2017-02-06 18:56:20+01:00"
+            },
+            {
+                "sha": "30ee7b94c3421411aa6257e78f77fe8b88aa125e",
+                "created_at": "2017-02-06 19:06:23+01:00"
+            },
+            {
+                "sha": "c197b926a5f02ab2a3842d4a8a736315c3c8eb33",
+                "created_at": "2017-02-06 19:14:53+01:00"
+            },
+            {
+                "sha": "97f97167ea0aa07bba4bd864b1f686c2f79ca33d",
+                "created_at": "2017-02-06 19:17:36+01:00"
+            },
+            {
+                "sha": "b08b1aeae4ad01582fd6264462a4a9345bfd065d",
+                "created_at": "2017-02-06 19:54:40+01:00"
+            },
+            {
+                "sha": "ef6a391006ab1fa672dc26fc234b6411a7dfa888",
+                "created_at": "2017-02-06 19:54:59+01:00"
+            },
+            {
+                "sha": "6e83aa3808bcb4accce54a1b1c0ba91dd01a8812",
+                "created_at": "2017-02-10 19:59:23+01:00"
+            },
+            {
+                "sha": "c9a1f973e334b402d59f9944c5a58d1db9c8da45",
+                "created_at": "2017-02-10 21:00:14+01:00"
+            }
+        ],
+        "pr_commit": "ef6a391006ab1fa672dc26fc234b6411a7dfa888",
+        "start_commit": "b08b1aeae4ad01582fd6264462a4a9345bfd065d",
+        "is_pr_commit_first": false
+    },
+    {
+        "pr_number": 136,
+        "created_at": "2016-11-28 22:29:32+00:00",
+        "commits": [
+            {
+                "sha": "364b0c9e8ae56916f0b9aead2a26f07ed57befca",
+                "created_at": "2016-11-28 23:16:20+01:00"
+            },
+            {
+                "sha": "9272881e6e8228504b3a3bc35a2d3f0c9f171c35",
+                "created_at": "2016-11-30 20:42:43+01:00"
+            },
+            {
+                "sha": "648c967171bb94c262c15fc5393ba813c313cdfb",
+                "created_at": "2016-11-30 23:13:07+01:00"
+            }
+        ],
+        "pr_commit": "364b0c9e8ae56916f0b9aead2a26f07ed57befca",
+        "start_commit": "059bd029ccfc56a0d9370f9862d4feed5fc07448",
+        "is_pr_commit_first": true
+    },
+    {
+        "pr_number": 104,
+        "created_at": "2015-09-15 21:44:54+00:00",
+        "commits": [
+            {
+                "sha": "f91c17a1c37bdbce9663098ad65f420f44468039",
+                "created_at": "2015-09-15 23:38:05+02:00"
+            },
+            {
+                "sha": "c8ddd6ba6f7196a7ceaf270b2b0e932daebaa36e",
+                "created_at": "2015-09-15 23:39:34+02:00"
+            },
+            {
+                "sha": "cb97ba70cb9ebe685f8f2a06e87b538795b5dd9b",
+                "created_at": "2015-09-22 07:52:49+02:00"
+            },
+            {
+                "sha": "9c8a75906a6146456f4b0d3d757ce09898408adc",
+                "created_at": "2015-09-22 07:55:40+02:00"
+            }
+        ],
+        "pr_commit": "c8ddd6ba6f7196a7ceaf270b2b0e932daebaa36e",
+        "start_commit": "f91c17a1c37bdbce9663098ad65f420f44468039",
+        "is_pr_commit_first": false
+    },
+    {
+        "pr_number": 84,
+        "created_at": "2015-01-31 09:16:39+00:00",
+        "commits": [
+            {
+                "sha": "d6a8af593fc03e12ecf2dc8047669472f7ca263b",
+                "created_at": "2015-01-28 03:25:14+01:00"
+            },
+            {
+                "sha": "9a8bb172cae84fe89f597843560056def30bd351",
+                "created_at": "2015-01-31 10:08:10+01:00"
+            },
+            {
+                "sha": "2b4629c71e5c82716d99a738f02063c90413253f",
+                "created_at": "2015-01-31 22:21:55+01:00"
+            }
+        ],
+        "pr_commit": "9a8bb172cae84fe89f597843560056def30bd351",
+        "start_commit": "d6a8af593fc03e12ecf2dc8047669472f7ca263b",
+        "is_pr_commit_first": false
+    },
+    {
+        "pr_number": 83,
+        "created_at": "2015-01-26 23:35:09+00:00",
+        "commits": [
+            {
+                "sha": "7c6f63a0d7c52c7abcaaf483c325b2a423971a09",
+                "created_at": "2014-12-16 09:14:38+01:00"
+            },
+            {
+                "sha": "650ee1565ba504294a6fbcd1acf8e48e3efb7e2b",
+                "created_at": "2014-12-16 09:16:55+01:00"
+            },
+            {
+                "sha": "a439d07c2e95fe4275d74f7c13a630b5dd08f6df",
+                "created_at": "2014-12-18 00:30:23+01:00"
+            },
+            {
+                "sha": "bbf9b25189ca4a87db3cb2573b3715ed554557f1",
+                "created_at": "2014-12-21 15:34:33+01:00"
+            },
+            {
+                "sha": "dbcb32ea7bbae17cdeed74bd42236e189f3079de",
+                "created_at": "2014-12-21 17:02:56+01:00"
+            },
+            {
+                "sha": "1a0cb37172dcdcee236c0551122f597ae04caa8c",
+                "created_at": "2014-12-21 17:15:06+01:00"
+            },
+            {
+                "sha": "9e5cafa349c377b1c0a9d491e8bc7a8ec6170eaf",
+                "created_at": "2014-12-24 12:13:59+01:00"
+            },
+            {
+                "sha": "dcaf38bb9d2a516be392ba04f201dd68c083bdf3",
+                "created_at": "2014-12-25 21:17:02+01:00"
+            },
+            {
+                "sha": "870d229b5a1756e050aad66203b1c7dfa1bec49c",
+                "created_at": "2014-12-26 13:13:15+01:00"
+            },
+            {
+                "sha": "889caca8e5b6e77cccbeed0a3b2762048789188e",
+                "created_at": "2015-01-27 00:12:20+01:00"
+            },
+            {
+                "sha": "866a535b66229e9bab3f09cbd42732d70ca9504f",
+                "created_at": "2015-03-24 02:10:22+01:00"
+            },
+            {
+                "sha": "947abde38a101b028deabf0316d5efa44dd074b7",
+                "created_at": "2015-03-25 00:47:56+01:00"
+            },
+            {
+                "sha": "ca9eb3d1a344813457a959481c3ff73bde074721",
+                "created_at": "2015-03-26 00:14:32+01:00"
+            },
+            {
+                "sha": "2824f9408e751b383770a77d260a07d9f1d7e544",
+                "created_at": "2015-03-26 01:05:11+01:00"
+            }
+        ],
+        "pr_commit": "889caca8e5b6e77cccbeed0a3b2762048789188e",
+        "start_commit": "870d229b5a1756e050aad66203b1c7dfa1bec49c",
+        "is_pr_commit_first": false
+    },
+    {
+        "pr_number": 75,
+        "created_at": "2014-12-16 08:24:38+00:00",
+        "commits": [
+            {
+                "sha": "7c6f63a0d7c52c7abcaaf483c325b2a423971a09",
+                "created_at": "2014-12-16 09:14:38+01:00"
+            },
+            {
+                "sha": "650ee1565ba504294a6fbcd1acf8e48e3efb7e2b",
+                "created_at": "2014-12-16 09:16:55+01:00"
+            },
+            {
+                "sha": "a439d07c2e95fe4275d74f7c13a630b5dd08f6df",
+                "created_at": "2014-12-18 00:30:23+01:00"
+            },
+            {
+                "sha": "bbf9b25189ca4a87db3cb2573b3715ed554557f1",
+                "created_at": "2014-12-21 15:34:33+01:00"
+            },
+            {
+                "sha": "dbcb32ea7bbae17cdeed74bd42236e189f3079de",
+                "created_at": "2014-12-21 17:02:56+01:00"
+            },
+            {
+                "sha": "1a0cb37172dcdcee236c0551122f597ae04caa8c",
+                "created_at": "2014-12-21 17:15:06+01:00"
+            },
+            {
+                "sha": "9e5cafa349c377b1c0a9d491e8bc7a8ec6170eaf",
+                "created_at": "2014-12-24 12:13:59+01:00"
+            },
+            {
+                "sha": "dcaf38bb9d2a516be392ba04f201dd68c083bdf3",
+                "created_at": "2014-12-25 21:17:02+01:00"
+            },
+            {
+                "sha": "870d229b5a1756e050aad66203b1c7dfa1bec49c",
+                "created_at": "2014-12-26 13:13:15+01:00"
+            }
+        ],
+        "pr_commit": "650ee1565ba504294a6fbcd1acf8e48e3efb7e2b",
+        "start_commit": "7c6f63a0d7c52c7abcaaf483c325b2a423971a09",
+        "is_pr_commit_first": false
+    },
+    {
+        "pr_number": 30,
+        "created_at": "2013-12-18 05:18:05+00:00",
+        "commits": [
+            {
+                "sha": "f0d7ea72f477e7bf1661747edc8163127680cbc4",
+                "created_at": "2013-12-17 21:17:02-08:00"
+            },
+            {
+                "sha": "4683d4d1a208a30ff3beb24c2da93d8b3674da7b",
+                "created_at": "2013-12-18 19:37:27-08:00"
+            }
+        ],
+        "pr_commit": "f0d7ea72f477e7bf1661747edc8163127680cbc4",
+        "start_commit": "75f05d7941ab28b63c1a5c8703a547e52c3c3bc9",
+        "is_pr_commit_first": true
+    }
+]

@@ -1,0 +1,135 @@
+---
+title: "Relatório sobre as issues"
+author: "Felipe Emerson de O. Calixto"
+date: "2023-07-14"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(dplyr)
+library(jsonlite)
+library(ggplot2)
+theme_set(theme_bw())
+
+options(dplyr.summarise.inform = FALSE)
+
+setwd("../.")
+# Ler os dados do arquivo
+data <- fromJSON("./data/processed_data/processed_issues_2.json")
+```
+
+# Overview dos dados de entrada
+```{r}
+glimpse(data)
+```
+
+# Sumário
+
+```{r echo=FALSE}
+# Criar uma nova coluna com a porcentagem de issues velhas resolvidas
+data$resolved_past_percent <- data$resolved_past / (data$resolved_past + data$not_resolved_past)
+
+# Criar uma nova coluna com a porcentagem de issues novas resolvidas
+data$resolved_inside_percent <- ifelse(data$resolved_inside == 0 & data$not_resolved_inside == 0, NA, data$resolved_inside / (data$resolved_inside + data$not_resolved_inside))
+
+
+# Criar uma nova coluna com a porcentagem de issues novas não resolvidas
+data$not_resolved_inside_percent <- ifelse(data$resolved_inside == 0 & data$not_resolved_inside == 0, NA, data$not_resolved_inside / (data$resolved_inside + data$not_resolved_inside))
+
+# Criar uma nova coluna com a porcentagem de issues resolvidas
+data$total_resolved_percent <- data$total_resolved / (data$total_resolved + data$total_not_resolved)
+
+# Agrupar os dados por `repo` e `pr_number`
+data_grouped <- data %>%
+  group_by(repo, pr_number)
+```
+
+## Tamanho da amostra por repositório (cada unidade da amostra é um PR)
+```{r}
+data %>%
+  group_by(repo) %>%
+  summarise(count = n())
+```
+
+## Qnt. de issues por PR por repositório
+```{r}
+data %>%
+    group_by(repo) %>%
+    ggplot(aes(y=total, x=repo)) +
+    geom_point(aes(color = repo)) +
+    labs(title ="Qnt. de issues por PR de cada repositorio",
+         color = "Repositorio"
+    ) +
+    xlab("Qnt. de issues por PR") +
+    ylab("Repositorio")
+```
+
+
+## Média da porcentagem de issues novas não resolvidas
+Obs.: Considerando apenas PRs que possuem issues novas.
+
+```{r}
+sprintf("A média da porcentagem de issues novas não resolvidas nos PRs que possuem issues novas é %.2f%%", mean(data$not_resolved_inside_percent, na.rm = TRUE) * 100)
+```
+
+## Métricas
+Considerando as métricas:
+- Porcentagem de issues antigas resolvidas
+- Porcentagem de issues novas resolvidas
+- Porcentagem de issues novas não resolvidas
+- Porcentagem de issues resolvidas
+```{r}
+# Exibir sumário das métricas
+data_grouped %>%
+  summarise(
+    resolved_past_percent = mean(resolved_past_percent, na.rm = TRUE),
+    resolved_inside_percent = mean(resolved_inside_percent, na.rm = TRUE),
+    not_resolved_inside_percent = mean(not_resolved_inside_percent, na.rm = TRUE),
+    total_resolved_percent = mean(total_resolved_percent, na.rm = TRUE)
+  )
+
+```
+
+# Análise das issues não resolvidas 
+
+## Taxa de Remoção de Violações (TRV)
+
+```{r}
+data %>%
+  group_by(repo) %>%
+  summarise(not_resolved_past_sum = sum(not_resolved_past),
+            total_sum = sum(total_not_resolved + resolved_past)
+  , trv = (total_sum - not_resolved_past_sum) / not_resolved_past_sum * 100)
+```
+
+Os projetos accumulo e o commons-io, apresentaram TRV de 0,33% e 0,13%, respectivamente. Isto é, há uma redução bem pequena no débito técnico. A amostra do maven-surefire não apresentou nenhuma issue resolvida, provavelmente por conta da amostra ser muito pequena (7).
+
+## Taxa de Remoção de Violações Velhas (TRV velhas)
+```{r}
+data %>%
+  group_by(repo) %>%
+  summarize(
+      soma_total = sum(not_resolved_past + resolved_past),
+      soma_not_resolved_past = sum(not_resolved_past)
+  ) %>%
+  mutate(trvv = ((soma_total - soma_not_resolved_past) / soma_total) * 100)
+```
+
+A TRV de violações velhas deu 0,22% e 0,02%, respectivamente, para os projetos accumulo e commons-io. Valores bem baixos de redução de violações velhas. A amostra do maven-surefire não apresentou nenhuma issue velha resolvida, provavelmente por conta da amostra ser muito pequena (7).
+
+## Taxa de Remoção de Violações novas (TRV novas)
+```{r}
+data %>%
+  group_by(repo) %>%
+  summarize(
+      soma_total = sum(not_resolved_inside + resolved_inside),
+      soma_not_resolved_inside = sum(not_resolved_inside)
+  ) %>%
+  mutate(trvn = ((soma_total - soma_not_resolved_inside) / soma_total) * 100)
+```
+
+A TRV de violações novas deu 8,60% e 17,5%, respectivamente, para os projetos accumulo e commons-io. Valores dentro do intervalo de redução de violações do artigo original. A amostra do maven-surefire não apresentou nenhuma issue nova resolvida, provavelmente por conta da amostra ser muito pequena (7).

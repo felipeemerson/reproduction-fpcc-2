@@ -1,0 +1,376 @@
+ERROR:root:Ocorreu um erro:
+Traceback (most recent call last):
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 269, in <module>
+    process_pr()
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 192, in process_pr
+    commits = [commit["sha"] for commit in prs[index]["commits"]]
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 192, in <listcomp>
+    commits = [commit["sha"] for commit in prs[index]["commits"]]
+TypeError: string indices must be integers
+ERROR:root:Ocorreu um erro:
+Traceback (most recent call last):
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 269, in <module>
+    process_pr()
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 192, in process_pr
+    commits = [commit["sha"] for commit in prs[index]["commits"]]
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 192, in <listcomp>
+    commits = [commit["sha"] for commit in prs[index]["commits"]]
+TypeError: string indices must be integers
+ERROR:root:Ocorreu um erro:
+Traceback (most recent call last):
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 271, in <module>
+    process_pr()
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 194, in process_pr
+    commits = [commit["sha"] for commit in prs[index]["commits"]]
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 194, in <listcomp>
+    commits = [commit["sha"] for commit in prs[index]["commits"]]
+TypeError: string indices must be integers
+ERROR:root:Ocorreu um erro:
+Traceback (most recent call last):
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 269, in <module>
+    process_pr()
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 234, in process_pr
+    raise Exception(
+Exception: Failed to compile... PR: 1851, commit: a4736fb0f06cee39e00b041de2100f1267182f85
+ERROR:root:Ocorreu um erro:
+Traceback (most recent call last):
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 269, in <module>
+    process_pr()
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 186, in process_pr
+    current_sonar_token = create_sonar_token(current_pr)
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 65, in create_sonar_token
+    return json["token"]
+KeyError: 'token'
+ERROR:root:Ocorreu um erro:
+Traceback (most recent call last):
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 269, in <module>
+    process_pr()
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 234, in process_pr
+    raise Exception(
+Exception: Failed to compile... PR: 1851, commit: a4736fb0f06cee39e00b041de2100f1267182f85
+ERROR:root:Ocorreu um erro:
+Traceback (most recent call last):
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 299, in <module>
+    process_pr()
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 265, in process_pr
+    raise Exception(error_msg)
+Exception: Failed to compile... PR: 1851, commit: a4736fb0f06cee39e00b041de2100f1267182f85
+ERROR:root:Ocorreu um erro:
+Traceback (most recent call last):
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 299, in <module>
+    process_pr()
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 265, in process_pr
+    raise Exception(error_msg)
+Exception: Failed to compile... PR: 571, commit: 543e014aa12399b3e8b35b4bd96afcfdd4f478e1
+ERROR:root:Ocorreu um erro:
+Traceback (most recent call last):
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 299, in <module>
+    process_pr()
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 265, in process_pr
+    raise Exception(error_msg)
+Exception: Failed to compile... PR: 770, commit: a21ea07beb78bbba81bf20418efd6ee82d6185e5
+ERROR:root:Ocorreu um erro:
+Traceback (most recent call last):
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 299, in <module>
+    process_pr()
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 229, in process_pr
+    start_commit_index = [i for i, commit in enumerate(commits) if commit["sha"] == prs[index]["start_commit"]][0]
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 229, in <listcomp>
+    start_commit_index = [i for i, commit in enumerate(commits) if commit["sha"] == prs[index]["start_commit"]][0]
+TypeError: string indices must be integers
+ERROR:root:Ocorreu um erro:
+Traceback (most recent call last):
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 299, in <module>
+    process_pr()
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 265, in process_pr
+    raise Exception(error_msg)
+Exception: Failed to compile... PR: 484, commit: 159c97981a24ffacbb9600ce2f9748e87cc7d4a3
+ERROR:root:Ocorreu um erro:
+Traceback (most recent call last):
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 299, in <module>
+    process_pr()
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 265, in process_pr
+    raise Exception(error_msg)
+Exception: Failed to compile... PR: 830, commit: 9cde6427dce49c35b49d48cabc7366185c335db7
+ERROR:root:Ocorreu um erro:
+Traceback (most recent call last):
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 299, in <module>
+    process_pr()
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 265, in process_pr
+    raise Exception(error_msg)
+Exception: Failed to compile... PR: 894, commit: b78f8e90789c824fa1802fcfee9c4193dc572606
+ERROR:root:Ocorreu um erro:
+Traceback (most recent call last):
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 299, in <module>
+    process_pr()
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 265, in process_pr
+    raise Exception(error_msg)
+Exception: Failed to compile... PR: 955, commit: 05f7baf644817379060fd45197bac027c768b13d
+ERROR:root:Ocorreu um erro:
+Traceback (most recent call last):
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 299, in <module>
+    process_pr()
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 265, in process_pr
+    raise Exception(error_msg)
+Exception: Failed to compile... PR: 2098, commit: 4a947d55b9b8fc04944f8ad2589394fbc87ba376
+ERROR:root:Ocorreu um erro:
+Traceback (most recent call last):
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 299, in <module>
+    process_pr()
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 265, in process_pr
+    raise Exception(error_msg)
+Exception: Failed to compile... PR: 1179, commit: d7a407a3d6367b96fbc513f5b94b3c0511a68bf0
+ERROR:root:Ocorreu um erro:
+Traceback (most recent call last):
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 299, in <module>
+    process_pr()
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 265, in process_pr
+    raise Exception(error_msg)
+Exception: Failed to compile... PR: 825, commit: c8d19d45f361f49a4d42b07310393b7bdf68b3b4
+ERROR:root:Ocorreu um erro:
+Traceback (most recent call last):
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 299, in <module>
+    process_pr()
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 252, in process_pr
+    raise Exception(error_msg)
+Exception: Pom file not found, skiping PR: 12116
+ERROR:root:Ocorreu um erro:
+Traceback (most recent call last):
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 339, in <module>
+    process_pr()
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 292, in process_pr
+    check_build_files(commit_sha)
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 203, in check_build_files
+    raise Exception(error_msg)
+Exception: Gradle file(s) missing, skiping PR: 459
+ERROR:root:Ocorreu um erro:
+Traceback (most recent call last):
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 339, in <module>
+    process_pr()
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 305, in process_pr
+    raise Exception(error_msg)
+Exception: Failed to compile... PR: 154, commit: d5aa7815ff98bef7d9175249dcb3cfcf9e2866ba
+ERROR:root:Ocorreu um erro:
+Traceback (most recent call last):
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 339, in <module>
+    process_pr()
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 305, in process_pr
+    raise Exception(error_msg)
+Exception: Failed to compile... PR: 120, commit: cd7787277b170d5f439df03850ca0c574566e539
+ERROR:root:Ocorreu um erro:
+Traceback (most recent call last):
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 339, in <module>
+    process_pr()
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 305, in process_pr
+    raise Exception(error_msg)
+Exception: Failed to compile... PR: 119, commit: cd7787277b170d5f439df03850ca0c574566e539
+ERROR:root:Ocorreu um erro:
+Traceback (most recent call last):
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 339, in <module>
+    process_pr()
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 305, in process_pr
+    raise Exception(error_msg)
+Exception: Failed to compile... PR: 115, commit: 661d47c2d347a0b38ceba80e43020ee6a92d3177
+ERROR:root:Ocorreu um erro:
+Traceback (most recent call last):
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 339, in <module>
+    process_pr()
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 305, in process_pr
+    raise Exception(error_msg)
+Exception: Failed to compile... PR: 112, commit: 772c8f78d9c5c3a9f80911e04e5a9d04fc8dad37
+ERROR:root:Ocorreu um erro:
+Traceback (most recent call last):
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 339, in <module>
+    process_pr()
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 305, in process_pr
+    raise Exception(error_msg)
+Exception: Failed to compile... PR: 109, commit: 3c96ee97f7fb4452cb530d33d60bd328cbe11357
+ERROR:root:Ocorreu um erro:
+Traceback (most recent call last):
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 339, in <module>
+    process_pr()
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 305, in process_pr
+    raise Exception(error_msg)
+Exception: Failed to compile... PR: 96, commit: d463fa0120fc1041729b7a564b2b5f96de9d6ab6
+ERROR:root:Ocorreu um erro:
+Traceback (most recent call last):
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 339, in <module>
+    process_pr()
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 305, in process_pr
+    raise Exception(error_msg)
+Exception: Failed to compile... PR: 95, commit: 58324c1cfb9814b390a8750b0ba97dc5367817a8
+ERROR:root:Ocorreu um erro:
+Traceback (most recent call last):
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 339, in <module>
+    process_pr()
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 305, in process_pr
+    raise Exception(error_msg)
+Exception: Failed to compile... PR: 93, commit: c126bdd5161a103cdd4718552d92e2b9153df70b
+ERROR:root:Ocorreu um erro:
+Traceback (most recent call last):
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 339, in <module>
+    process_pr()
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 305, in process_pr
+    raise Exception(error_msg)
+Exception: Failed to compile... PR: 87, commit: a9fdb74350dd92d46d23bf355e797ef0b96c06c7
+ERROR:root:Ocorreu um erro:
+Traceback (most recent call last):
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 339, in <module>
+    process_pr()
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 305, in process_pr
+    raise Exception(error_msg)
+Exception: Failed to compile... PR: 86, commit: a9fdb74350dd92d46d23bf355e797ef0b96c06c7
+ERROR:root:Ocorreu um erro:
+Traceback (most recent call last):
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 339, in <module>
+    process_pr()
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 305, in process_pr
+    raise Exception(error_msg)
+Exception: Failed to compile... PR: 85, commit: 67820409911a58f3631bb3be0e9fa8fb1d758611
+ERROR:root:Ocorreu um erro:
+Traceback (most recent call last):
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 339, in <module>
+    process_pr()
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 305, in process_pr
+    raise Exception(error_msg)
+Exception: Failed to compile... PR: 80, commit: 21eab4e090d4e25770e01e8b30f39613eb9669a8
+ERROR:root:Ocorreu um erro:
+Traceback (most recent call last):
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 339, in <module>
+    process_pr()
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 305, in process_pr
+    raise Exception(error_msg)
+Exception: Failed to compile... PR: 79, commit: d606ae3de8be22a47735edffa2c64130be831036
+ERROR:root:Ocorreu um erro:
+Traceback (most recent call last):
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 339, in <module>
+    process_pr()
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 305, in process_pr
+    raise Exception(error_msg)
+Exception: Failed to compile... PR: 332, commit: f14fa54b9eba073c8c896a829fac1c2037b34222
+ERROR:root:Ocorreu um erro:
+Traceback (most recent call last):
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 339, in <module>
+    process_pr()
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 305, in process_pr
+    raise Exception(error_msg)
+Exception: Failed to compile... PR: 287, commit: f64ca98a09e378318118bbd984d3ebacf8749318
+ERROR:root:Ocorreu um erro:
+Traceback (most recent call last):
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 339, in <module>
+    process_pr()
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 305, in process_pr
+    raise Exception(error_msg)
+Exception: Failed to compile... PR: 267, commit: 136f79ee4ca739129f408a581398018bbf774247
+ERROR:root:Ocorreu um erro:
+Traceback (most recent call last):
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 339, in <module>
+    process_pr()
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 305, in process_pr
+    raise Exception(error_msg)
+Exception: Failed to compile... PR: 162, commit: 9580f5ef25c0d4736046165275f2d57d31686ae9
+ERROR:root:Ocorreu um erro:
+Traceback (most recent call last):
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 339, in <module>
+    process_pr()
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 305, in process_pr
+    raise Exception(error_msg)
+Exception: Failed to compile... PR: 142, commit: b08b1aeae4ad01582fd6264462a4a9345bfd065d
+ERROR:root:Ocorreu um erro:
+Traceback (most recent call last):
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 339, in <module>
+    process_pr()
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 305, in process_pr
+    raise Exception(error_msg)
+Exception: Failed to compile... PR: 136, commit: 059bd029ccfc56a0d9370f9862d4feed5fc07448
+ERROR:root:Ocorreu um erro:
+Traceback (most recent call last):
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 339, in <module>
+    process_pr()
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 305, in process_pr
+    raise Exception(error_msg)
+Exception: Failed to compile... PR: 104, commit: f91c17a1c37bdbce9663098ad65f420f44468039
+ERROR:root:Ocorreu um erro:
+Traceback (most recent call last):
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 339, in <module>
+    process_pr()
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 305, in process_pr
+    raise Exception(error_msg)
+Exception: Failed to compile... PR: 84, commit: d6a8af593fc03e12ecf2dc8047669472f7ca263b
+ERROR:root:Ocorreu um erro:
+Traceback (most recent call last):
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 339, in <module>
+    process_pr()
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 305, in process_pr
+    raise Exception(error_msg)
+Exception: Failed to compile... PR: 83, commit: 870d229b5a1756e050aad66203b1c7dfa1bec49c
+ERROR:root:Ocorreu um erro:
+Traceback (most recent call last):
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 339, in <module>
+    process_pr()
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 305, in process_pr
+    raise Exception(error_msg)
+Exception: Failed to compile... PR: 75, commit: 7c6f63a0d7c52c7abcaaf483c325b2a423971a09
+ERROR:root:Ocorreu um erro:
+Traceback (most recent call last):
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 339, in <module>
+    process_pr()
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 305, in process_pr
+    raise Exception(error_msg)
+Exception: Failed to compile... PR: 30, commit: 75f05d7941ab28b63c1a5c8703a547e52c3c3bc9
+ERROR:root:Ocorreu um erro:
+Traceback (most recent call last):
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 339, in <module>
+    process_pr()
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 305, in process_pr
+    raise Exception(error_msg)
+Exception: Failed to compile... PR: 963, commit: 6ab75691868407e0b004ee58dd2a2aa5ed12abe6
+ERROR:root:Ocorreu um erro:
+Traceback (most recent call last):
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 339, in <module>
+    process_pr()
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 305, in process_pr
+    raise Exception(error_msg)
+Exception: Failed to compile... PR: 44, commit: cf5ef46f3a450c50aa804445d4a82fbabb18dacd
+ERROR:root:Ocorreu um erro:
+Traceback (most recent call last):
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 339, in <module>
+    process_pr()
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 305, in process_pr
+    raise Exception(error_msg)
+Exception: Failed to compile... PR: 1131, commit: 2d39ceac525ae950b3e1f1e29e2e29f49e21c244
+ERROR:root:Ocorreu um erro:
+Traceback (most recent call last):
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 339, in <module>
+    process_pr()
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 305, in process_pr
+    raise Exception(error_msg)
+Exception: Failed to compile... PR: 1917, commit: daa6985409618e6242cbaf693a908d94abd55d9e
+ERROR:root:Ocorreu um erro:
+Traceback (most recent call last):
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 339, in <module>
+    process_pr()
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 305, in process_pr
+    raise Exception(error_msg)
+Exception: Failed to compile... PR: 3294, commit: 6c47b924b49e0a41da8dea44026004484be8784e
+ERROR:root:Ocorreu um erro:
+Traceback (most recent call last):
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 339, in <module>
+    process_pr()
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 305, in process_pr
+    raise Exception(error_msg)
+Exception: Failed to compile... PR: 1552, commit: 766851b81c5620cc52559f0561929c0552cd9de0
+ERROR:root:Ocorreu um erro:
+Traceback (most recent call last):
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 339, in <module>
+    process_pr()
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 305, in process_pr
+    raise Exception(error_msg)
+Exception: Failed to compile... PR: 2847, commit: 7c731e815560ae5f3d9d9aa6095a8858c52afbd0
+ERROR:root:Ocorreu um erro:
+Traceback (most recent call last):
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 339, in <module>
+    process_pr()
+  File "/home/felipe/Documents/github-mining/sonar-scripts/sonar-automation.py", line 305, in process_pr
+    raise Exception(error_msg)
+Exception: Failed to compile... PR: 945, commit: 218de58b52a3eb43201d46e34f639c6a6a7dd58a

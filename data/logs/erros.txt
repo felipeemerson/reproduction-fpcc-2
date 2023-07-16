@@ -1,0 +1,19 @@
+Accumulo
+
+PR 770 - falha ao compilar, aparentemente a partir desse código não tem o spotbugs, e pra compilar talvez removendo a verificação do spotbugs
+
+
+Maven-Surefire
+PR 332 - surefire-api/src/main/java/org/apache/maven/surefire/api/report/ReportEntry.java:[79,89] error: tag not supported in HTML5: tt
+PR 287 - igual
+PR 267 - Some Enforcer rules have failed. Look above for specific messages explaining why the rule failed. -> [Help 1]
+PR 162 - igual
+PR 142 - igual
+PR 136 - igual
+PR 104 - Could not resolve dependencies for project org.apache.maven.surefire:surefire-api:jar:2.19-SNAPSHOT: Could not find artifact
+        org.apache.maven.shared:maven-shared-utils:jar:0.9-SNAPSHOT in apache.snapshots (http://repository.apache.org/snapshots) -> [Help 1]
+PR 84 - [ERROR] Source option 5 is no longer supported. Use 7 or later.
+        [ERROR] Target option 5 is no longer supported. Use 7 or later.
+PR 83 - igual
+PR 75 - igual
+PR 30 - igual

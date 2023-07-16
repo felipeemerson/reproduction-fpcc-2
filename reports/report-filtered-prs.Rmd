@@ -1,0 +1,119 @@
+---
+title: "Relatório sobre os PRs filtrados"
+author: "Felipe Emerson de O. Calixto"
+date: "2023-07-15"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(jsonlite)
+library(dplyr)
+library(ggplot2)
+
+theme_set(theme_bw())
+
+data <- fromJSON("../data/processed_data/processed_filtered_prs.json")
+```
+
+# Overview dos dados
+
+## PRs
+
+### Total de PRs
+```{r}
+data %>% count()
+```
+
+### Quantidade de PRs por repositório
+```{r}
+data %>%
+    group_by(repo) %>%
+    count()
+```
+
+### Quantidade de PRs que possuem PR_commit como primeiro commit (geral)
+```{r echo=FALSE}
+# Calcular a quantidade de PRs que apresentam "is_pr_commit_first" como true e o complemento
+qnt_PRs_true <- data %>%
+  filter(is_pr_commit_first == TRUE) %>%
+  nrow()
+
+qnt_PRs_false <- data %>%
+  filter(is_pr_commit_first == FALSE) %>%
+  nrow()
+
+# Calcular a porcentagem de PRs que apresentam "is_pr_commit_first" como true
+porcentagem_true <- (qnt_PRs_true / nrow(data)) * 100
+porcentagem_false <- (qnt_PRs_false / nrow(data)) * 100
+
+sprintf("Quantidade de PRs com PR_commit como primeiro commit: %s", qnt_PRs_true)
+sprintf("Quantidade de PRs com PR_commit nao sendo primeiro commit: %s", qnt_PRs_false)
+sprintf("Porcentagem de PRs com PR_commit como primeiro commit: %.2f%%", porcentagem_true)
+sprintf("Porcentagem de PRs com PR_commit nao sendo primeiro commit: %.2f%%", porcentagem_false)
+```
+### Quantidade de PRs que possuem PR_commit como primeiro commit (por repo)
+
+```{r}
+# Calcular a quantidade de PRs com is_pr_commit_first como true e o complemento agrupado por repo
+qnt_PRs_true_por_repo <- data %>%
+  group_by(repo) %>%
+  summarize(qnt_PRs_true = sum(is_pr_commit_first == TRUE),
+            qnt_PRs_false = sum(is_pr_commit_first == FALSE))
+
+# Calcular as porcentagens correspondentes
+qnt_PRs_true_por_repo <- qnt_PRs_true_por_repo %>%
+  mutate(porcentagem_PRs_true = (qnt_PRs_true / (qnt_PRs_true + qnt_PRs_false)) * 100,
+         porcentagem_PRs_false = (qnt_PRs_false / (qnt_PRs_true + qnt_PRs_false)) * 100)
+
+qnt_PRs_true_por_repo
+```
+
+## Commits
+
+### Total de commits
+```{r}
+sum(data$qnt_commits)
+```
+
+### Total de commits por repo
+```{r}
+data %>%
+    group_by(repo) %>%
+    summarize(total_commits = sum(qnt_commits))
+
+data %>%
+    group_by(repo) %>%
+    ggplot(aes(x=qnt_commits, y=repo)) +
+    geom_point(aes(color = repo)) +
+    labs(title ="Qnt. de commits por PR de cada repositório",
+         color = "Repositório"
+    ) +
+    xlab("Qnt. de commits por PR") +
+    ylab("Repositório")
+```
+
+### Boxplot quantidade de commits por PR
+```{r}
+ggplot(data, aes(x = "", y = qnt_commits)) +
+  geom_boxplot() +
+  labs(title = "Número de Commits por PR")
+```
+
+### Sumário commits por PR
+```{r}
+summary(data$qnt_commits)
+```
+### Frequência da quantidade de commits distintas por PR em ordem decrescente
+
+```{r}
+# Calcular a porcentagem da frequência do número de commits distintos por PR e mostrar em ordem decrescente
+data %>%
+  count(qnt_commits) %>%
+  mutate(porcentagem = prop.table(n) * 100) %>%
+  arrange(desc(porcentagem))
+```
+

@@ -1,0 +1,44 @@
+[
+    {
+        "pr_number": 40,
+        "created_at": "2020-09-08 13:41:56+00:00",
+        "commits": [
+            {
+                "sha": "b00a31d8ed5e6e7ab3f2ed899f3add650bfe5c3f",
+                "created_at": "2020-09-08 15:29:06+02:00"
+            },
+            {
+                "sha": "310eb06fbd4f6f00ea57bfaf01b18f5295da2df0",
+                "created_at": "2020-09-11 13:13:45+02:00"
+            },
+            {
+                "sha": "070914c62d9b1d5ecb08b4bd4b815df70caa7ecf",
+                "created_at": "2020-09-14 09:18:16+02:00"
+            }
+        ],
+        "pr_commit": "b00a31d8ed5e6e7ab3f2ed899f3add650bfe5c3f",
+        "start_commit": "11ec7f62cf552727098dd2739046b819e94d7307",
+        "is_pr_commit_first": true
+    },
+    {
+        "pr_number": 2,
+        "created_at": "2018-03-08 17:11:41+00:00",
+        "commits": [
+            {
+                "sha": "f754bea536a33418ffa3c8dc8cc1adfcc200e7c8",
+                "created_at": "2018-03-08 18:09:50+01:00"
+            },
+            {
+                "sha": "cb7fd6476a9cb437b5464c58e2225f35fbbeeba6",
+                "created_at": "2018-03-08 18:17:05+01:00"
+            },
+            {
+                "sha": "6a5c54387a565d15e639da21b60c8ea0b084439b",
+                "created_at": "2019-04-30 10:57:13+02:00"
+            }
+        ],
+        "pr_commit": "f754bea536a33418ffa3c8dc8cc1adfcc200e7c8",
+        "start_commit": "1399b77e0205b8b5dd8f67fe188f8fc99979ca8e",
+        "is_pr_commit_first": true
+    }
+]

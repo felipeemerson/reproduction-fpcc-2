@@ -1,0 +1,359 @@
+[
+    {
+        "repo": "accumulo",
+        "pr_number": 1379,
+        "resolved": 0,
+        "not_resolved": 39485,
+        "total": 39485
+    },
+    {
+        "repo": "accumulo",
+        "pr_number": 1414,
+        "resolved": 1,
+        "not_resolved": 39508,
+        "total": 39509
+    },
+    {
+        "repo": "accumulo",
+        "pr_number": 1545,
+        "resolved": 7,
+        "not_resolved": 19564,
+        "total": 19571
+    },
+    {
+        "repo": "accumulo",
+        "pr_number": 1667,
+        "resolved": 0,
+        "not_resolved": 39804,
+        "total": 39804
+    },
+    {
+        "repo": "accumulo",
+        "pr_number": 1706,
+        "resolved": 0,
+        "not_resolved": 19243,
+        "total": 19243
+    },
+    {
+        "repo": "accumulo",
+        "pr_number": 1758,
+        "resolved": 1,
+        "not_resolved": 19204,
+        "total": 19205
+    },
+    {
+        "repo": "accumulo",
+        "pr_number": 1772,
+        "resolved": 0,
+        "not_resolved": 19210,
+        "total": 19210
+    },
+    {
+        "repo": "accumulo",
+        "pr_number": 1795,
+        "resolved": 0,
+        "not_resolved": 19268,
+        "total": 19268
+    },
+    {
+        "repo": "accumulo",
+        "pr_number": 1947,
+        "resolved": 0,
+        "not_resolved": 19445,
+        "total": 19445
+    },
+    {
+        "repo": "accumulo",
+        "pr_number": 2234,
+        "resolved": 7,
+        "not_resolved": 7439,
+        "total": 7446
+    },
+    {
+        "repo": "accumulo",
+        "pr_number": 2305,
+        "resolved": 17,
+        "not_resolved": 7447,
+        "total": 7464
+    },
+    {
+        "repo": "accumulo",
+        "pr_number": 2462,
+        "resolved": 0,
+        "not_resolved": 7664,
+        "total": 7664
+    },
+    {
+        "repo": "accumulo",
+        "pr_number": 2517,
+        "resolved": 12,
+        "not_resolved": 8978,
+        "total": 8990
+    },
+    {
+        "repo": "accumulo",
+        "pr_number": 2737,
+        "resolved": 0,
+        "not_resolved": 9925,
+        "total": 9925
+    },
+    {
+        "repo": "accumulo",
+        "pr_number": 2777,
+        "resolved": 1,
+        "not_resolved": 9917,
+        "total": 9918
+    },
+    {
+        "repo": "accumulo",
+        "pr_number": 2784,
+        "resolved": 0,
+        "not_resolved": 9915,
+        "total": 9915
+    },
+    {
+        "repo": "accumulo",
+        "pr_number": 2888,
+        "resolved": 1,
+        "not_resolved": 10089,
+        "total": 10090
+    },
+    {
+        "repo": "accumulo",
+        "pr_number": 2903,
+        "resolved": 0,
+        "not_resolved": 10093,
+        "total": 10093
+    },
+    {
+        "repo": "accumulo",
+        "pr_number": 2909,
+        "resolved": 4,
+        "not_resolved": 10094,
+        "total": 10098
+    },
+    {
+        "repo": "accumulo",
+        "pr_number": 3037,
+        "resolved": 6,
+        "not_resolved": 10192,
+        "total": 10198
+    },
+    {
+        "repo": "accumulo",
+        "pr_number": 3074,
+        "resolved": 17,
+        "not_resolved": 9673,
+        "total": 9690
+    },
+    {
+        "repo": "accumulo",
+        "pr_number": 3106,
+        "resolved": 143,
+        "not_resolved": 8629,
+        "total": 8772
+    },
+    {
+        "repo": "accumulo",
+        "pr_number": 3160,
+        "resolved": 99,
+        "not_resolved": 8470,
+        "total": 8569
+    },
+    {
+        "repo": "accumulo",
+        "pr_number": 3245,
+        "resolved": 8,
+        "not_resolved": 10228,
+        "total": 10236
+    },
+    {
+        "repo": "accumulo",
+        "pr_number": 3268,
+        "resolved": 0,
+        "not_resolved": 8386,
+        "total": 8386
+    },
+    {
+        "repo": "accumulo",
+        "pr_number": 3401,
+        "resolved": 279,
+        "not_resolved": 7931,
+        "total": 8210
+    },
+    {
+        "repo": "accumulo",
+        "pr_number": 3424,
+        "resolved": 3,
+        "not_resolved": 7930,
+        "total": 7933
+    },
+    {
+        "repo": "accumulo",
+        "pr_number": 3453,
+        "resolved": 73,
+        "not_resolved": 8207,
+        "total": 8280
+    },
+    {
+        "repo": "accumulo",
+        "pr_number": 3476,
+        "resolved": 0,
+        "not_resolved": 7935,
+        "total": 7935
+    },
+    {
+        "repo": "accumulo",
+        "pr_number": 3542,
+        "resolved": 1,
+        "not_resolved": 10259,
+        "total": 10260
+    },
+    {
+        "repo": "accumulo",
+        "pr_number": 3542,
+        "resolved": 1,
+        "not_resolved": 10259,
+        "total": 10260
+    },
+    {
+        "repo": "accumulo",
+        "pr_number": 3543,
+        "resolved": 0,
+        "not_resolved": 10260,
+        "total": 10260
+    },
+    {
+        "repo": "commons-io",
+        "pr_number": 179,
+        "resolved": 1,
+        "not_resolved": 1975,
+        "total": 1976
+    },
+    {
+        "repo": "commons-io",
+        "pr_number": 201,
+        "resolved": 0,
+        "not_resolved": 2001,
+        "total": 2001
+    },
+    {
+        "repo": "commons-io",
+        "pr_number": 230,
+        "resolved": 0,
+        "not_resolved": 2008,
+        "total": 2008
+    },
+    {
+        "repo": "commons-io",
+        "pr_number": 236,
+        "resolved": 0,
+        "not_resolved": 2017,
+        "total": 2017
+    },
+    {
+        "repo": "commons-io",
+        "pr_number": 244,
+        "resolved": 0,
+        "not_resolved": 1995,
+        "total": 1995
+    },
+    {
+        "repo": "commons-io",
+        "pr_number": 245,
+        "resolved": 0,
+        "not_resolved": 1993,
+        "total": 1993
+    },
+    {
+        "repo": "commons-io",
+        "pr_number": 310,
+        "resolved": 3,
+        "not_resolved": 2254,
+        "total": 2257
+    },
+    {
+        "repo": "commons-io",
+        "pr_number": 325,
+        "resolved": 0,
+        "not_resolved": 2277,
+        "total": 2277
+    },
+    {
+        "repo": "commons-io",
+        "pr_number": 374,
+        "resolved": 7,
+        "not_resolved": 2502,
+        "total": 2509
+    },
+    {
+        "repo": "commons-io",
+        "pr_number": 375,
+        "resolved": 0,
+        "not_resolved": 2500,
+        "total": 2500
+    },
+    {
+        "repo": "commons-io",
+        "pr_number": 377,
+        "resolved": 3,
+        "not_resolved": 2505,
+        "total": 2508
+    },
+    {
+        "repo": "commons-io",
+        "pr_number": 383,
+        "resolved": 0,
+        "not_resolved": 2503,
+        "total": 2503
+    },
+    {
+        "repo": "commons-io",
+        "pr_number": 450,
+        "resolved": 1,
+        "not_resolved": 2802,
+        "total": 2803
+    },
+    {
+        "repo": "commons-io",
+        "pr_number": 459,
+        "resolved": 0,
+        "not_resolved": 2852,
+        "total": 2852
+    },
+    {
+        "repo": "maven-surefire",
+        "pr_number": 401,
+        "resolved": 0,
+        "not_resolved": 913,
+        "total": 913
+    },
+    {
+        "repo": "maven-surefire",
+        "pr_number": 480,
+        "resolved": 0,
+        "not_resolved": 1073,
+        "total": 1073
+    },
+    {
+        "repo": "maven-surefire",
+        "pr_number": 481,
+        "resolved": 0,
+        "not_resolved": 1073,
+        "total": 1073
+    },
+    {
+        "repo": "maven-surefire",
+        "pr_number": 508,
+        "resolved": 0,
+        "not_resolved": 1094,
+        "total": 1094
+    },
+    {
+        "repo": "maven-surefire",
+        "pr_number": 527,
+        "resolved": 0,
+        "not_resolved": 1092,
+        "total": 1092
+    }
+]

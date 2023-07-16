@@ -1,0 +1,81 @@
+---
+title: "Relatório sobre os PRs"
+author: "Felipe Emerson de O. Calixto"
+date: "2023-07-15"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(jsonlite)
+library(dplyr)
+library(ggplot2)
+
+theme_set(theme_bw())
+
+data <- fromJSON("../data/processed_data/processed_prs.json")
+```
+
+# Overview dos dados
+
+## PRs
+
+### Total de PRs
+```{r}
+data %>% count()
+```
+
+### Quantidade de PRs por repositório
+```{r}
+data %>%
+    group_by(repo) %>%
+    count()
+```
+
+## Commits
+
+### Total de commits
+```{r}
+sum(data$qnt_commits)
+```
+
+### Total de commits por repo
+```{r}
+data %>%
+    group_by(repo) %>%
+    summarize(total_commits = sum(qnt_commits))
+
+data %>%
+    group_by(repo) %>%
+    ggplot(aes(x=qnt_commits, y=repo)) +
+    geom_point(aes(color = repo)) +
+    labs(title ="Qnt. de commits por PR de cada repositório",
+         color = "Repositório"
+    ) +
+    xlab("Qnt. de commits por PR") +
+    ylab("Repositório")
+```
+
+### Boxplot quantidade de commits por PR
+```{r}
+ggplot(data, aes(x = "", y = qnt_commits)) +
+  geom_boxplot() +
+  labs(title = "Número de Commits por PR")
+```
+
+### Sumário commits por PR
+```{r}
+summary(data$qnt_commits)
+```
+### Frequência da quantidade de commits distintas por PR em ordem decrescente
+
+```{r}
+# Calcular a porcentagem da frequência do número de commits distintos por PR e mostrar em ordem decrescente
+data %>%
+  count(qnt_commits) %>%
+  mutate(porcentagem = prop.table(n) * 100) %>%
+  arrange(desc(porcentagem))
+```
